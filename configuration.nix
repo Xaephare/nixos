@@ -124,6 +124,11 @@
       cargo
       python3
       android-studio
+      wgnord
+      wireguard-tools
+      openresolv
+      eww
+      flutter
     ];
   };
 
@@ -179,6 +184,7 @@
     zip
     unzip
     xz
+    jq
   ];
 
   # Run appimages
