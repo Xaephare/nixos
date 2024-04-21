@@ -17,7 +17,7 @@ in
     users.users.${cfg.userName} = {
       isNormalUser = true;
       initialPassword = "nixos";
-      description = "main user";
+      description = "${cfg.userName}";
       shell = pkgs.fish;
     };
   };

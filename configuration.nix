@@ -96,7 +96,6 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.xaephare = {
     isNormalUser = true;
-    description = "main user";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       kitty
