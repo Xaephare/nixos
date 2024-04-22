@@ -128,6 +128,7 @@
       openresolv
       eww
       flutter
+      logseq
     ];
   };
 
