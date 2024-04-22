@@ -168,7 +168,6 @@
     xfce.tumbler
     ffmpegthumbnailer
     wl-clipboard
-    libsForQt5.dolphin
     xdg-desktop-portal-hyprland
     xdg-desktop-portal
     wluma
