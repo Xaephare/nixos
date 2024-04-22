@@ -79,4 +79,19 @@
     userName = "Xaephare";
     userEmail = "louisgrace@onmail.com";
   };
+
+  programs.kitty = {
+    enable = true;
+    settings = {
+      confirm_os_window_close = 0;
+    };
+    shellIntegration.enableFishIntegration = true;
+  };
+
+  programs.fish = {
+    enable = true;
+    functions = {
+      fish_greeting = "";
+    };
+  };
 }
