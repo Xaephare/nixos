@@ -19,6 +19,9 @@
   # Enable fish
   programs.fish.enable = true;
 
+  # Optimise Nix storage
+  nix.optimise.automatic = true;
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -132,6 +135,7 @@
       logseq
       codeium
       discord # unfree
+      baobab
     ];
   };
 
