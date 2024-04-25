@@ -120,6 +120,7 @@
       popcorntime
       qbittorrent
       rustc
+      rustup
       cargo
       python3
       android-studio
@@ -129,6 +130,8 @@
       eww
       flutter
       logseq
+      codeium
+      discord # unfree
     ];
   };
 
@@ -184,6 +187,7 @@
     unzip
     xz
     jq
+    jdk
   ];
 
   # Run appimages
