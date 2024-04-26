@@ -103,6 +103,7 @@
     packages = with pkgs; [
       kitty
       vscodium
+      vscodium-fhs
       brave
       electron_28
       libsForQt5.kdeconnect-kde
