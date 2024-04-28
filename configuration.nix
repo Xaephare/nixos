@@ -1,16 +1,20 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
-
-{ config, pkgs, inputs, lib, options, ... }:
-
 {
-  imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
-      ./main-user.nix
-    ];
+  config,
+  pkgs,
+  inputs,
+  lib,
+  options,
+  ...
+}: {
+  imports = [
+    # Include the results of the hardware scan.
+    ./hardware-configuration.nix
+    inputs.home-manager.nixosModules.default
+    ./main-user.nix
+  ];
 
   # Set user
   main-user.enable = true;
@@ -30,7 +34,7 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = ["nix-command" "flakes"];
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -62,10 +66,10 @@
       audio.enable = true;
       pulse.enable = true;
       alsa = {
-      enable = true;
+        enable = true;
         support32Bit = true;
       };
-    jack.enable = true;
+      jack.enable = true;
     };
   };
 
@@ -99,7 +103,7 @@
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.xaephare = {
     isNormalUser = true;
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = ["networkmanager" "wheel"];
     packages = with pkgs; [
       kitty
       vscodium
@@ -131,7 +135,6 @@
       wgnord
       wireguard-tools
       openresolv
-      eww
       flutter
       logseq
       codeium
@@ -142,7 +145,7 @@
 
   home-manager = {
     # Pass inputs to home-manager modules
-    extraSpecialArgs = { inherit inputs; };
+    extraSpecialArgs = {inherit inputs;};
     users = {
       "xaephare" = import ./home.nix;
     };
@@ -193,6 +196,8 @@
     xz
     jq
     jdk
+    alejandra
+    direnv
   ];
 
   # Run appimages
@@ -206,12 +211,12 @@
   };
 
   # Steam dependencies
-    hardware.opengl.driSupport32Bit = true;
-    hardware.pulseaudio.support32Bit = true;
+  hardware.opengl.driSupport32Bit = true;
+  hardware.pulseaudio.support32Bit = true;
 
   # Allow Unfree Packages
   nixpkgs.config.allowUnfree = true;
-  # nixpkgs.config.allowUnfreePredicate = pkg: 
+  # nixpkgs.config.allowUnfreePredicate = pkg:
   #  builtins.elem (lib.getName pkg) [
   #  ];
 
@@ -257,5 +262,4 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.11"; # Did you read the comment?
-
 }
