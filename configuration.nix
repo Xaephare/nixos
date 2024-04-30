@@ -198,6 +198,7 @@
     jdk
     alejandra
     direnv
+    mpd
   ];
 
   # Run appimages
