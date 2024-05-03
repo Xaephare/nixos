@@ -100,6 +100,9 @@
     variant = "";
   };
 
+  # Enable KDE Connect
+  programs.kdeconnect.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.xaephare = {
     isNormalUser = true;
@@ -110,7 +113,6 @@
       vscodium-fhs
       brave
       electron_28
-      libsForQt5.kdeconnect-kde
       telegram-desktop
       fish
       neovim
@@ -160,6 +162,9 @@
     enable = true;
     xwayland.enable = true;
   };
+
+  # Enable KDE
+  services.desktopManager.plasma6.enable = true;
 
   # Enable polkit
   security.polkit.enable = true;
