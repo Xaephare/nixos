@@ -143,6 +143,7 @@
       discord # unfree
       baobab
       krita
+      kicad
     ];
   };
 
