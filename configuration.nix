@@ -142,6 +142,7 @@
       codeium
       discord # unfree
       baobab
+      krita
     ];
   };
 
