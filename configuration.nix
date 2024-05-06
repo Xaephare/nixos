@@ -144,6 +144,7 @@
       baobab
       krita
       kicad
+      hyprshot
     ];
   };
 
