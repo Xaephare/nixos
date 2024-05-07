@@ -231,9 +231,7 @@
 
   # Fonts
   fonts.packages = with pkgs; [
-    pkgs.font-awesome
     pkgs.nerdfonts
-    pkgs.noto-fonts
   ];
 
   # Udev rules:
