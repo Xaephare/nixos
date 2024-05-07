@@ -145,6 +145,7 @@
       krita
       kicad
       hyprshot
+      godot_4
     ];
   };
 
