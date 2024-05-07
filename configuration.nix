@@ -127,7 +127,6 @@
       inkscape
       lf
       xfce.thunar
-      popcorntime
       qbittorrent
       rustc
       rustup
