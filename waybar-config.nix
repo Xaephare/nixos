@@ -20,6 +20,24 @@
             "paused" = "";
           };
         };
+        "hyprland/workspaces" = {
+          "format" = "{icon}";
+          "format-icons" = {
+            "1" = "一";
+            "2" = "二";
+            "3" = "三";
+            "4" = "四";
+            "5" = "五";
+            "6" = "六";
+            "7" = "七";
+            "8" = "八";
+            "9" = "九";
+            "10" = "〇";
+          };
+          "persistent-workspaces" = {
+            "*" = 10;
+          };
+        };
         "battery" = {
           "tooltip" = false;
           "format" = "{icon}  {capacity}%";
@@ -54,5 +72,27 @@
         };
       };
     };
+    style = "
+      #workspaces button {
+        padding: 0 0.5em;
+        background-color: @surface0;
+        color: @text;
+        margin: 0.25em;
+      }
+      #workspaces button.empty {
+        color: @overlay0;
+      }
+      #workspaces button.visible {
+        color: @blue;
+      }
+      #workspaces button.active {
+        color: @green;
+      }
+      #workspaces button.urgent {
+        background-color: @red;
+        border-radius: 1em;
+        color: @text;
+      }
+    ";
   };
 }
