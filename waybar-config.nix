@@ -1,0 +1,58 @@
+{
+  programs.waybar = {
+    enable = true;
+    systemd.enable = true;
+    systemd.target = "multi-user.target";
+
+    settings = {
+      mainBar = {
+        "layer" = "top";
+        "modules-left" = ["hyprland/workspaces" "mpd" "hyprland/mode"];
+        "modules-center" = [];
+        "modules-right" = ["battery" "network" "pulseaudio" "temperature" "cpu" "memory" "clock"];
+        "mpd" = {
+          "tooltip" = false;
+          "format" = "{stateIcon} {artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S})";
+          "format-disconnected" = "ﳌ";
+          "format-stopped" = "";
+          "state-icons" = {
+            "playing" = "";
+            "paused" = "";
+          };
+        };
+        "battery" = {
+          "tooltip" = false;
+          "format" = "{icon}  {capacity}%";
+          "format-icons" = {
+            "default" = ["" "" "" "" ""];
+          };
+        };
+        "pulseaudio" = {
+          "tooltip" = false;
+          "scroll-step" = 5;
+          "format" = "{icon}  {volume}%";
+          "format-icons" = {
+            "default" = ["" ""];
+          };
+        };
+        "network" = {
+          "tooltip" = false;
+          "format-wifi" = "  {essid} {ipaddr}";
+          "format-ethernet" = "󰈀  {ipaddr}";
+        };
+        "cpu" = {
+          "tooltip" = false;
+          "format" = "  {}%";
+        };
+        "memory" = {
+          "tooltip" = false;
+          "format" = "  {}%";
+        };
+        "temperature" = {
+          "tooltip" = false;
+          "format" = " {}°C";
+        };
+      };
+    };
+  };
+}
