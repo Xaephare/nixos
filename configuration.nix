@@ -157,7 +157,7 @@
   };
 
   # Enable ssdm
-  services.xserver.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
   services.xserver.enable = true;
 
   # Enable Hyprland
@@ -207,6 +207,7 @@
     alejandra
     direnv
     mpd
+    libsForQt5.partitionmanager
   ];
 
   # Run appimages
