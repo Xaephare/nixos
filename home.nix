@@ -76,6 +76,10 @@
   programs.home-manager.enable = true;
 
   # Program configs
+  imports = [
+    ./hyprland-config.nix
+  ];
+
   programs.git = {
     enable = true;
     userName = "Xaephare";
