@@ -147,6 +147,7 @@
       godot_4
       jetbrains-toolbox
       monitor
+      librewolf
     ];
   };
 
