@@ -35,7 +35,7 @@
             "10" = "〇";
           };
           "persistent-workspaces" = {
-            "*" = 10;
+            "*" = 5;
           };
         };
         "battery" = {
@@ -80,16 +80,16 @@
         margin: 0.25em;
       }
       #workspaces button.empty {
-        color: @overlay0;
+        color: #F8F8FF; /*white*/
       }
       #workspaces button.visible {
-        color: @blue;
+        color: #ffffff; /*white*/
       }
       #workspaces button.active {
-        color: @green;
+        color: #00FFFF; /*cyan*/
       }
       #workspaces button.urgent {
-        background-color: @red;
+        background-color: #DC143C; /*red*/
         border-radius: 1em;
         color: @text;
       }
