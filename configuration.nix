@@ -146,6 +146,7 @@
       hyprshot
       godot_4
       jetbrains-toolbox
+      monitor
     ];
   };
 
