@@ -145,6 +145,7 @@
       kicad
       hyprshot
       godot_4
+      jetbrains-toolbox
     ];
   };
 
