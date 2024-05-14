@@ -148,6 +148,7 @@
       jetbrains-toolbox
       monitor
       librewolf
+      libreoffice-fresh
     ];
   };
 
