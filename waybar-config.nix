@@ -37,7 +37,6 @@
           };
           "persistent-workspaces" = {
             "*" = 5;
-            "eDP-1" = [1 2 3 4 5];
           };
         };
 
@@ -114,14 +113,15 @@
     };
     style = "
       #backlight-slider slider {
-        min-height: 10px;
-        min-width: 10px;
+        min-height: 5px;
+        min-width: 5px;
+        background-color: gray;
         background-image: none;
         border: none;
         box-shadow: none;
       }
       #backlight-slider trough {
-        min-height: 5px;
+        min-height: 3px;
         min-width: 80px;
         border-radius: 5px;
         background-color: black;
