@@ -36,6 +36,7 @@
           };
           "persistent-workspaces" = {
             "*" = 5;
+            "eDP-1" = [1 2 3 4 5];
           };
         };
         "battery" = {
