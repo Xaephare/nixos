@@ -9,7 +9,17 @@
         "layer" = "top";
         "modules-left" = ["hyprland/workspaces"];
         "modules-center" = ["hyprland/window"];
-        "modules-right" = ["backlight/slider" "battery" "bluetooth" "network" "pulseaudio" "temperature" "cpu" "memory" "clock"];
+        "modules-right" = [
+          "backlight/slider"
+          "battery"
+          "bluetooth"
+          "network"
+          "pulseaudio"
+          "temperature"
+          "cpu"
+          "memory"
+          "clock"
+        ];
 
         "hyprland/workspaces" = {
           "format" = "{icon}";
