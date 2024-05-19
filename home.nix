@@ -79,20 +79,13 @@
   imports = [
     ./hyprland-config.nix
     ./waybar-config.nix
+    ./kitty-config.nix
   ];
 
   programs.git = {
     enable = true;
     userName = "Xaephare";
     userEmail = "louisgrace@onmail.com";
-  };
-
-  programs.kitty = {
-    enable = true;
-    settings = {
-      confirm_os_window_close = 0;
-    };
-    shellIntegration.enableFishIntegration = true;
   };
 
   programs.fish = {
