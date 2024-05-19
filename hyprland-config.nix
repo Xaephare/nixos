@@ -3,16 +3,16 @@
     enable = true;
     settings = {
       monitor = [
-        "eDP-1, 1920x1080@60, 0x0, 1"
-        ",preferred,auto,1" # for random monitors
+        "Main, 1920x1080@60, 0x0, 1"
+        "Secondary, preferred, auto ,1" # for random monitors
       ];
 
       exec-once = [
         "lxsession"
         "systemctl --user start graphical-session.target"
         "waybar"
-        "[workspace 6 silent] brave"
         "[workspace 1 silent] com.github.stsdc.monitor"
+        "[workspace 6 silent] brave"
         "[workspace 2 silent] spotify"
       ];
 
