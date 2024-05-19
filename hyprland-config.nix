@@ -11,6 +11,9 @@
         "lxsession"
         "systemctl --user start graphical-session.target"
         "waybar"
+        "[workspace 6 silent] brave"
+        "[workspace 1 silent] com.github.stsdc.monitor"
+        "[workspace 2 silent] spotify"
       ];
 
       env = [
