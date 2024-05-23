@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       confirm_os_window_close = 0;
-      background_opacity = 0;
+      background_opacity = "0.69";
       background_blur = 69;
       foreground = "#E2E0EC";
       background = "#0B0A10";
