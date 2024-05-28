@@ -142,13 +142,15 @@
       discord # unfree
       baobab
       krita
-      kicad
       hyprshot
       godot_4
       jetbrains-toolbox
       monitor
       librewolf
       libreoffice-fresh
+      kicad-unstable
+      figma-linux
+      obs-studio
     ];
   };
 
