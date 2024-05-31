@@ -151,6 +151,7 @@
       kicad-unstable
       figma-linux
       obs-studio
+      bitwig-studio
     ];
   };
 
