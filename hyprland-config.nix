@@ -4,7 +4,7 @@
     settings = {
       monitor = [
         "Main, 1920x1080@60, 0x0, 1"
-        "Secondary, preferred, auto ,1" # for random monitors
+        "Secondary, 1920x1080@60, auto ,1" # for random monitors
       ];
 
       exec-once = [
@@ -13,7 +13,6 @@
         "waybar"
         "[workspace 1 silent] com.github.stsdc.monitor"
         "[workspace 6 silent] brave"
-        "[workspace 2 silent] spotify"
       ];
 
       env = [
