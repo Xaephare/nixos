@@ -152,6 +152,7 @@
       figma-linux
       obs-studio
       bitwig-studio
+      arduino-ide
     ];
   };
 
