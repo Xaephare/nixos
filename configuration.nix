@@ -153,6 +153,7 @@
       obs-studio
       bitwig-studio
       arduino-ide
+      localsend
     ];
   };
 
