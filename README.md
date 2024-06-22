@@ -4,6 +4,10 @@ __On a clean NixOs install open a terminal and paste:__
 ```
 cd /etc/nixos && sudo rm -r nixos
 ```
+__Clone the repo:__  
+```
+sudo git clone https://github.com/Xaephare/nixos.git
+```
 __Then regenerate the hardware config file with:__  
 ```
 sudo nixos-generate-config
