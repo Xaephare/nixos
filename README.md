@@ -2,7 +2,7 @@ _This is pretty much just for me_
 
 __On a clean NixOs install open a terminal and paste:__  
 ```
-cd /etc/nixos && sudo rm -r nixos
+cd /etc/nixos ; sudo rm -r nixos
 ```
 __Clone the repo:__  
 ```
